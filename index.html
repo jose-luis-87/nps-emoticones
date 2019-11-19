@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body class="bodyNps" id="bodyNps">
+    <div class="container justify-content-center divGral" id="divGral">
+        <div class="row">
+            <div class="p1">
+                <h4>1.- En general,¿cuál es tu grado de satisfacción en esta sala?</h4>
+            </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="msj0">
+                <p>Totalmente insatisfecho</p>
+            </div>
+            <div class="check1">
+                <input type="checkbox" id="check1" name="check1" value="0-6">
+                <label for="check1"><span></span></label>
+            </div>
+            <div class="check2">
+                <input type="checkbox" id="check2" name="check2" value="0-6">
+                <label for="check2"><span></span></label>
+            </div>
+            <div class="check3">
+                <input type="checkbox" id="check3" name="check3" value="7-8">
+                <label for="check3"><span></span></label>
+            </div>
+            <div class="check4">
+                <input type="checkbox" id="check4" name="check4" value="9">
+                <label for="check4"><span></span></label>
+            </div>
+            <div class="check5">
+                <input type="checkbox" id="check5" name="check5" value="10">
+                <label for="check5"><span></span></label>
+            </div>
+            <div class="msj10">
+                <p>Totalmente satisfecho</p>
+            </div>
+        </div><br>
+
+        <div class="row">
+            <div class="p1">
+                <h4>2.- ¿Qué tan probable es que recomiendes esta sala a otros jugadores?</h4>
+            </div>
+        </div><br>
+        <div class="row justify-content-center">
+            <div class="msj0">
+                <p>Definitivamente NO la recomendaría</p>
+            </div>
+            <div class="check2-1">
+                <input type="checkbox" id="check2-1" name="check2-1" value="0-6">
+                <label for="check2-1"><span></span></label>
+            </div>
+            <div class="check2-2">
+                <input type="checkbox" id="check2-2" name="check2-2" value="0-6">
+                <label for="check2-2"><span></span></label>
+            </div>
+            <div class="check2-3">
+                <input type="checkbox" id="check2-3" name="check2-3" value="7-8">
+                <label for="check2-3"><span></span></label>
+            </div>
+            <div class="check2-4">
+                <input type="checkbox" id="check2-4" name="check2-4" value="9">
+                <label for="check2-4"><span></span></label>
+            </div>
+            <div class="check2-5">
+                <input type="checkbox" id="check2-5" name="check2-5" value="10">
+                <label for="check2-5"><span></span></label>
+            </div>
+            <div class="msj10">
+                <p>Definitivamente SÍ la recomendaría</p>
+            </div>
+        </div><br>
+        <div class="row">
+            <div class="p1">
+                <h4>3.- De las últimas 10 visitas que has realizado a salas de juego, ¿cuántas veces aproximadamente has venido a nuestras salas y cuántas a otras salas?</h4>
+            </div>
+            <div class="selecteurPrix">
+                <div class="PrixMin">Nuestras salas: 0</div>
+                <div class="range-slider">
+                    <input class="input-range" type="range" value="5" min="0" max="10">
+                    <div class="valeurPrix">
+                        <span class="range-value"></span>
+                    </div>
+                </div>
+                <div class="PrixMin">10</div>
+            </div>
+
+            <div class="selecteurPrix2">
+                <div class="PrixMin2">Otras salas: 0</div>
+                <div class="range-slider2">
+                    <input class="input-range2" type="range" value="5" min="0" max="10">
+                    <div class="valeurPrix2">
+                        <span class="range-value2"></span>
+                    </div>
+                </div>
+                <div class="PrixMin2">10</div>
+            </div>
+        </div>
+        <BR></BR>
+        <div class="container align-items-center">
+            <div class="row">
+                <label for="msjtxt">4.- ¿Por qué has visitado a otras salas?</label>
+            </div>
+
+            <div class="row">
+                <textarea id="msjtxt" placeholder="Aquí escribe tu respuesta"></textarea>
+            </div>
+        </div><br><br>
+        <div class="container align-items-center">
+            <div class="row">
+                <label for="msjtxt2">5.- ¿Cuáles salas de la competencia visitas?</label>
+            </div>
+
+            <div class="row">
+                <textarea id="msjtxt2" placeholder="Aquí escribe tu respuesta"></textarea>
+            </div>
+        </div><br><br>
+
+        <div class="container align-items-center">
+            <div class="row">
+                <label for="msjtxt3">6.- ¿Por qué nos das estas calificaciones?</label>
+            </div>
+
+            <div class="row">
+                <textarea id="msjtxt3" placeholder="Aquí escribe tu respuesta"></textarea>
+            </div>
+        </div><br>
+        <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup">x</a>
+                <img src="img/icon-01.png" class="animated tada infinite delay-1s"><img>
+                <h4>Por ayudarnos a realizar al encuesta:</h4>
+                <h2>¡Ganaste 100 PUNTOS!</h2>
+                <button type="submit" id="btn-aceptar" class="btn-enviar">ACEPTAR</button>
+            </div>
+        </div>
+        <div class="overlay" id="overlay2">
+            <div class="popup" id="popup2">
+                <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup">x</a>
+                <img src="img/icon-02.png" class="animated tada infinite delay-1s"><img>
+                <h2>¿DESEAS SALIR O CONTINUAR?</h3>
+                    <br>
+                    <div class="row align-items-center">
+                        <div class="col-md">
+                            <button type="submit" id="btn-salir" class="btn-enviar">SALIR</button>
+                        </div>
+                        <div class="col-md">
+                            <button type="submit" id="btn-continuar" class="btn-enviar">CONTINUAR</button>
+                        </div>
+
+                    </div>
+                    <br>
+                    <p>También puedes dejar tus comentarios por correo electrónico: servicio.clientes@codere.com,<br> al Centro de Atención Codere 800 000 2925, o de nuevo en este Kiosco.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md align-items-center">
+                <br>
+                <button type="submit" id="btn-enviar" class="btn-enviar">ENVIAR</button>
+            </div>
+            <div class="col-md align-items-center">
+                <br>
+                <button type="submit" id="btn-cancelar" class="btn-cancelar">CANCELAR</button>
+            </div>
+        </div>
+
+
+        <div class="overlay" id="overlay3">
+            <div class="popup" id="popup3">
+                <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3">x</a>
+
+                <h2>¡Hoy tienes la oportunidad de ganar más puntos!</h3>
+                    <p>Contesta la encuesta y obten 600 puntos en Terminales.</p>
+
+                    <br>
+                    <div class="row align-items-center">
+                        <div class="col-md">
+                            <button type="button" id="btn-continuar3" class="btn-enviar">SÍ, PARTICIPAR</button>
+                        </div>
+                        <div class="col-md">
+                            <button type="button" id="btn-salir3" class="btn-enviar">SALIR </button>
+                        </div>
+                    </div>
+                    <br>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+<script src="anime.min.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="popup.js"></script>
+<script src="app.js"></script>
+
+</html>
